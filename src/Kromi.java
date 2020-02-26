@@ -1,21 +1,23 @@
+package Oscurilandia;
+
 
 public class Kromi extends Carro{
 	
-	private int año; //año de fabricación de la Kromi
-	
+	private int año; //año de fabricación de la Kromi	
 	private String marca; // marca de la Kromi
-	
-	public Kromi(int cantidadOcup, String fechaingreso, int ubicaciónTableroF, int ubicaciónTableroC, int año,
-			String marca) {
-		
-		super(cantidadOcup, fechaingreso, ubicaciónTableroF, ubicaciónTableroC);
-		this.año = año;
-		this.marca = marca;
-	}
 
 	public Kromi() {
 		super();
 	}
+	
+	public Kromi(int cantidadOcup, String fechaingreso, int ubicaciónTableroF, int ubicaciónTableroC, int año, String marca) {		
+		super(cantidadOcup, fechaingreso, ubicaciónTableroF, ubicaciónTableroC);
+		this.año = año;
+		this.marca = marca;
+	}
+	
+
+	
 
 	public String getMarca() {
 		return marca;
@@ -32,5 +34,9 @@ public class Kromi extends Carro{
 	public void setAño(int año) {
 		this.año = año;
 	}
+
+	
+		
+	
 	
 }

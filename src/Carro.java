@@ -1,14 +1,14 @@
+package Oscurilandia;
 
-public class Carro {
+
+public abstract class Carro {
 
 	private int cantidadOcup; // cantidad de agentes que lleva dentro
 	private String fechaingreso; //fecha de ingreso del carro
 	private int ubicaciónTableroF; //Ubicación de carro en fila del tablero
 	private int ubicaciónTableroC; // Ubicación de carro en columna del tablero
 	
-	public String toString() {
-		return "Carro [cantidadOcup=" + cantidadOcup + ", fechaingreso=" + fechaingreso + ", ubicaciónTableroF="
-				+ ubicaciónTableroF + ", ubicaciónTableroC=" + ubicaciónTableroC + "]";
+	public Carro() {		
 	}
 
 	public Carro(int cantidadOcup, String fechaingreso, int ubicaciónTableroF, int ubicaciónTableroC) {
@@ -16,10 +16,6 @@ public class Carro {
 		this.fechaingreso = fechaingreso;
 		this.ubicaciónTableroF = ubicaciónTableroF;
 		this.ubicaciónTableroC = ubicaciónTableroC;
-	}
-
-	public Carro() {
-		
 	}
 
 	public int getCantidadOcup() {
@@ -54,6 +50,16 @@ public class Carro {
 		this.ubicaciónTableroC = ubicaciónTableroC;
 	}
 	
+	public String toString() {
+		return "Carro [la cantidad de ocupantes de esta trupalla es= " + cantidadOcup + ", su fecha de ingreso= " + fechaingreso + ", su fila= "
+				+ ubicaciónTableroF + ", su columna =" + ubicaciónTableroC + "]";
+	}
 	
-
+	
+	
+	
+	
+	
+	
+	
 }
